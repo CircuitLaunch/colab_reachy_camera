@@ -11,7 +11,7 @@ wiki: http://wiki.ros.org/apriltag_ros
 
 def image_pub():
     # create a new publisher.
-    pub = rospy.Publisher('/camera/image_rect', Image, queue_size=10)
+    pub = rospy.Publisher('/camera_rect/image_rect', Image, queue_size=1)
     # initialize a node
     rospy.init_node('webcam_pub', anonymous=True)
     # set the loop rate (#60hz)
@@ -35,7 +35,7 @@ def image_pub():
         
         # publish the image
         pub.publish(image_msg)
-        rrate.sleep()
+        rate.sleep()
     
 if __name__ == "__main__":  
     try:
