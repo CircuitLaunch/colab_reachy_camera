@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# colab-ros-camera-node
-=======
 # colab-ros-camera-node
 
 ## Overview
