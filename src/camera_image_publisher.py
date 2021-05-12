@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import cv2
+import sys
 from sensor_msgs.msg import Image
 import rospy
 from cv_bridge import CvBridge, CvBridgeError
@@ -7,7 +8,7 @@ from cv_bridge import CvBridge, CvBridgeError
 
 '''
 wiki: http://wiki.ros.org/apriltag_ros
-'''
+         '''
 
 def image_pub():
     # create a new publisher.
@@ -18,7 +19,7 @@ def image_pub():
     rate = rospy.Rate(60)
 
     # create a camera object
-    cam = cv2.VideoCapture(0)
+    cam = cv2.VideoCapture("/dev/video2")
 
     # check if camera is available
     if not cam.isOpened():
