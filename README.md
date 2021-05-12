@@ -6,7 +6,7 @@ This repository contains code to subscripe to the image topic and obtain image d
 ## Packages
 - [usb_cam](http://wiki.ros.org/usb_cam)
 
-Install the packages and git clone under `catkin_ws/src`.
+Install the packages and git clone under `catkin_ws/src` then run `catkin_make`.
 
 Also, install the usb-cam package that'll install the package to `/opt/ros/noetic/lib` directory.
 ```
