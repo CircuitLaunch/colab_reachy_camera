@@ -25,8 +25,6 @@ sudo apt-get install ros-noetic-usb-cam
 - Type `ls /dev/video*` and look for the correct webcam device (e.g. /dev/video1).
 
     - To use an external cam, locate the usb_cam-test.launch file in folder `cd ~/catkin-ws/src/usb_cam/launch`. Change `<param name="video_device" value="/dev/video0" />` to `<param name="video_device" value="/dev/video1" />` From `cd ~/catkin-ws/src/usb_cam/launch`. Modify the video* accordingly.
-    - <strike>Also, change the `/dev/video*` on line 92 of the `usb_cam_node.cpp`.</strike>
--  <strike> Build the catkin_ws by typing `catkin_make`. </strike>
 
 - Run `roslaunch usb_cam-test.launch`.
 
