@@ -1,10 +1,13 @@
 # colab-ros-camera-node
 
 ## Overview
-This repository contains two nodes that publishes images and camera calibration. ROS package `usb_cam` is only used for calibration.
+This repository contains two nodes that publishes images and camera calibration. A launch file is used to launch both nodes. As shown in the image below, the two nodes publish to `/camera/image_rect` and `/camera/camera_info` topics. Camera info contains the camera calibration data which can be obtained via ROS package `usb_cam`.
 
+<p align="center">
+    <image width="500"src="./img/overview.png">
+</p>
 
-However, camera calibration MUST be first performed to get the camera calibration yaml file.
+Camera calibration MUST be first performed to get the camera calibration yaml file.
 
 ## Calibration
 ### Packages
