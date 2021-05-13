@@ -1,7 +1,13 @@
 # colab-ros-camera-node
 
 ## Overview
-This repository contains two nodes that publishes images and camera calibration. Ros package `usb_cam` is used for calibration.
+This repository contains two nodes that publishes images and camera calibration. ROS package `usb_cam` is only used for calibration.
+
+A launch file can be used as shown below. But a camera device must be provided in the argument (/dev/video2) was used for this example.
+
+```
+roslaunch colab-ros-camera-node camera_image_and_info.launch cam_dev:=/dev/video2
+```
 
 ## Packages
 - [usb_cam](http://wiki.ros.org/usb_cam)
