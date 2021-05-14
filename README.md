@@ -53,6 +53,9 @@ The usb-cam launch file runs `/usb-cam` and `/image_view` nodes with `/usb_cam/I
 </p>
 
 ### Calibration
+
+You can download any grids from the internet. One example is [here](https://www.programmersought.com/article/53804218731/). If you use this grid, make sure you change the size of the grid as well as the square length.
+
 Once the launch file is ran, run the following commands. If your checkboard has 8 rows and 6 columns, make sure to put 7x5. 
 On first terminal, run
 
