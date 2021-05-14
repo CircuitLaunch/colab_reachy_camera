@@ -1,0 +1,8 @@
+<launch>
+
+  <arg name="cam_dev" default = "/dev/video2" />
+  <arg name="cam_info_path" default = "ost.yaml"/>
+  <node pkg="colab-ros-camera-node" type="camera_info_publisher.py" name="camera_info" args="$(find colab-ros-camera-node)/config/$(arg cam_info_path)"/>
+  <node pkg="colab-ros-camera-node" type="camera_image_publisher.py" name="camera_image" args="$(arg cam_dev)"/>
+
+</launch>
