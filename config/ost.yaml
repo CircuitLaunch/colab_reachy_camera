@@ -1,0 +1,28 @@
+image_width: 640
+image_height: 480
+camera_name: narrow_stereo
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [540.41493,   0.     , 310.28036,
+           0.     , 544.35762, 277.19343,
+           0.     ,   0.     ,   1.     ]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.035837, -0.049647, 0.003463, -0.000782, 0.000000]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1., 0., 0.,
+         0., 1., 0.,
+         0., 0., 1.]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [528.92047,   0.     , 308.75626,   0.     ,
+           0.     , 536.83545, 278.57033,   0.     ,
+           0.     ,   0.     ,   1.     ,   0.     ]
+
+# THIS IS A COPY OF THE OST_LIAM_CAMERA.YAML. USING FOR TESTING

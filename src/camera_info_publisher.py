@@ -49,7 +49,7 @@ def image_info_pub(yaml_path):
     # initialize a node
     rospy.init_node('webcam_info_pub', anonymous=True)
     # set the loop rate (#60hz)
-    rate = rospy.Rate(60)
+    rate = rospy.Rate(10)
 
     while not rospy.is_shutdown():
         info = parse_camera_info(yaml_path)   

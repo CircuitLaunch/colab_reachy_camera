@@ -16,10 +16,10 @@ def image_pub(cam_device):
     # initialize a node
     rospy.init_node('webcam_pub', anonymous=True)
     # set the loop rate (#60hz)
-    rate = rospy.Rate(60)
+    rate = rospy.Rate(10)
 
     # create a camera object
-    cam = cv2.VideoCapture("/dev/video2")
+    cam = cv2.VideoCapture(cam_device)
 
     # check if camera is available
     if not cam.isOpened():
